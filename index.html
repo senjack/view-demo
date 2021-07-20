@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="app"> 
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col"></div> -->
+                <div class="all-width center-txt"><h1>Student Registration System</h1></div >
+                    <hr/>
+                <div class="col-5">
+                    <div>
+                        <h4>
+                            <small class="text-muted">Preview: </small>
+                            <small >John Doe</small>
+                        </h4>    
+                    </div>
+
+                    <div>
+                        <input class="form-control mgn-btm-10" type="text" placeholder="First Name" aria-label="first name">
+                        <input class="form-control mgn-btm-10" type="text" placeholder="Last Name" aria-label="last name">
+                        <input class="form-control mgn-btm-10" type="email" placeholder="Email" aria-label="email">
+                        <button type="button" class="btn btn-primary"> Register </button>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Ssenengo</td>
+                                <td>Jackson</td>
+                                <td>senjack@domain.tld</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>jodoe@domain.tld</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jane</td>
+                                <td>Doe</td>
+                                <td>jadoe@domain.tld</td>
+                              </tr>
+                            </tbody>
+                          </table>                    
+                            
+                    </div>
+                </div>
+          </div>
+    </div> 
+    
+    <script src="scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="scripts/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

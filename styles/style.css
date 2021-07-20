@@ -1,0 +1,39 @@
+body{
+    margin-top: 50px
+}
+
+.all-width{
+    width: 100%;
+}
+.center-txt{
+    text-align: center;
+}
+
+.mgn-btm-10{
+    margin-bottom: 10px;
+}
+
+.hyt-300{
+    height: 300px;
+}
+
+.clr-white{
+    color: white;
+}
+
+.bg-clr-black{
+    background-color: black;
+}
+
+.bg-color-purple{
+    background-color: purple;
+}
+
+.bg-color-powderblue{
+    background-color: powderblue;
+}
+
+.txt-center{
+    text-align: center;
+    vertical-align:middle;
+}
