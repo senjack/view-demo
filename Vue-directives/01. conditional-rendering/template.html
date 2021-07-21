@@ -20,15 +20,15 @@
           <!-- v-if and v-else  -->
           <!-- v-if-elseif-..-else  -->
 
-        <div class="col hyt-300 bg-clr-black clr-white">
+        <div class="col hyt-300 bg-clr-black clr-white" v-if='vacistProgram'>
           Refactory Vacists Program
         </div>
 
-        <div class="col hyt-300 bg-color-purple clr-white">
+        <div class="col hyt-300 bg-color-purple clr-white" v-else-if='catalystProgram'>
           Refactory Catalyst Program
         </div>
 
-        <div class="col hyt-300 bg-color-powderblue">
+        <div class="col hyt-300 bg-color-powderblue" v-else>
           Refactory Bootcamp Program
         </div>
         <!-- Conditional Rendering ends -->
