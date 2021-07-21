@@ -1,13 +1,10 @@
-const appInstance = {
-    data(){
-        return {
-            student:{
-              firstname:'',
-              lastname:'',
-              email:''
-            }
-        }
-    },
-}
+const conditionalRendering = {
+  data() {
+    return { 
+      vacistProgram:true,
+      catalystProgram:false
+    }
+  }
+} 
 
-Vue.createApp(appInstance).mount('#app')
+Vue.createApp(conditionalRendering).mount('#app')

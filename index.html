@@ -19,7 +19,7 @@
                     <div>
                         <h4>
                             <small class="text-muted">Preview: </small>
-                            <small >{{student.firstname}}{{student.lastname}} {{student.email}}</small>
+                            <small >{{student.firstName}}{{student.lastName}} {{student.email}}</small>
                         </h4>    
                     </div>
 
@@ -27,7 +27,7 @@
                         <input class="form-control mgn-btm-10" type="text" placeholder="First Name" aria-label="first name">
                         <input class="form-control mgn-btm-10" type="text" placeholder="Last Name" aria-label="last name">
                         <input class="form-control mgn-btm-10" type="email" placeholder="Email" aria-label="email">
-                        <button type="button" class="btn btn-primary"> Register </button>
+                        <button type="button" class="btn btn-primary mgn-btm-10"> Register </button>
                     </div>
                     
                 </div>
@@ -66,11 +66,13 @@
                             
                     </div>
                 </div>
+                <hr/>
+                <a v-bind:href="refactoryLink">Refactory</a>
           </div>
     </div> 
     
-    <script src="scripts/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="scripts/vue.js"></script>
+    <script src="scripts/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

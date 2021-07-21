@@ -1,8 +1,14 @@
-const appObject = {
-  data() {
-    return { counter: 0 }
-  }
-} 
+const appInstance = {
+    data(){
+        return {
+            student: {
+                firstName:"john",
+                lastName:"Doe",
+                email:"jdoe@domain.tld"
+            },
+            refactoryLink:'https://www.refactory.ug'
+        }
+    },
+}
 
-Vue.createApp(Counter).mount('#counter')
-
+Vue.createApp(appInstance).mount('#app')
