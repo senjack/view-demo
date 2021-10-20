@@ -19,17 +19,16 @@
                     <div>
                         <h4>
                             <small class="text-muted">Preview: </small>
-                            <small >John Doe</small>
+                            <small >{{student.firstName}} {{student.lastName}} ({{student.email}})</small>
                         </h4>    
                     </div>
 
                     <div>
-                        <input class="form-control mgn-btm-10" type="text" placeholder="First Name" aria-label="first name">
-                        <input class="form-control mgn-btm-10" type="text" placeholder="Last Name" aria-label="last name">
-                        <input class="form-control mgn-btm-10" type="email" placeholder="Email" aria-label="email">
-                        <button type="button" class="btn btn-primary"> Register </button>
+                        <input v-model="student.firstName" class="form-control mgn-btm-10" type="text" placeholder="First Name" aria-label="first name">
+                        <input v-model="student.lastName" class="form-control mgn-btm-10" type="text" placeholder="Last Name" aria-label="last name">
+                        <input v-model="student.email" class="form-control mgn-btm-10" type="email" placeholder="Email" aria-label="email">
+                        <button @click="registerStudent" type="button" class="btn btn-primary mgn-btm-10"> Register </button>
                     </div>
-                    
                 </div>
                 <div class="col">
                     <div>
@@ -43,34 +42,24 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Ssenengo</td>
-                                <td>Jackson</td>
-                                <td>senjack@domain.tld</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>jodoe@domain.tld</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jane</td>
-                                <td>Doe</td>
-                                <td>jadoe@domain.tld</td>
+                              <tr v-for="(member, index) in students">
+                                <th scope="row">{{index+1}}</th>
+                                <td>{{member.firstName}}</td>
+                                <td>{{member.lastName}}</td>
+                                <td>{{member.email}}</td>
                               </tr>
                             </tbody>
                           </table>                    
                             
                     </div>
                 </div>
+                <hr/>
+                <a v-bind:href="refactoryLink">refactory</a>
           </div>
     </div> 
     
     <script src="scripts/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="scripts/vue.js"></script>
-    <script src="script.js"></script>
+     <script src="script.js"></script>
 </body>
 </html>

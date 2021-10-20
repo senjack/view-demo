@@ -1,8 +1,22 @@
-const appObject = {
-  data() {
-    return { counter: 0 }
+const appInstance = {
+  data(){
+      return {
+        students:[],
+        student: {
+              firstName:"",
+              lastName:"",
+              email:""
+          },
+          refactoryLink:"https://www.refactory.ug"
+      };
+  },
+  methods: {
+      registerStudent:function(){
+          console.log(this.students);
+          this.students.push(Object.assign({}, this.student));
+          console.log(this.students);
+      }
   }
-} 
+}
 
-Vue.createApp(Counter).mount('#counter')
-
+Vue.createApp(appInstance).mount('#app')
